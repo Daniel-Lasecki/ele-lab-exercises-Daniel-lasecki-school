@@ -19,9 +19,9 @@ Generally, for each lab exercise, you are supposed to:
 2. Simulate your design with LTSpice and write down the simulation results. Compare those with calculated values.
 3. Measure your design and compare the values with calculated and simulation values.
 
-When submitting answers to questions, use the file format, which is viewable with web browser in git. These include: PDF, plain text, .md markup. 
+When submitting lab notebooks/reports, use the file format, which is viewable with web browser in git. These include: PDF, plain text, .md markup. 
 
-MS Office or Open Office documents (.doc, .docx, .odt, .odf) cannot be rendered by web browsers, which makes them pretty slow to read through, as they need to downlaoded first.
+MS Office or Open Office documents (.doc, .docx, .odt, .odf) cannot be rendered by web browsers, which makes them pretty slow to read through, as they need to be downlaoded first.
 
 
 
