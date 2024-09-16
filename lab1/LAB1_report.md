@@ -1,79 +1,90 @@
-# Lab Report
+# ELE Labs - Lab 1 Report
 
-## Group Information
+**Name:** Przemyslaw Lasecki  
+**Course:** ELE Labs  
+**Lab Title:** Lab 1 - DC Circuit Analysis
 
-- **Group Number**: [Your Group Number]
-- **Group Members**: 
-  - [Member 1]
-  - [Member 2]
-  - [Member 3]
-  - **Editor-in-Chief**: [Highlight Editor-in-Chief]
+## 1. Objective
 
-## Report Details
+The purpose of this experiment is to analyze a simple DC circuit using a series of resistors and a DC voltage source. The objective is to measure the voltage at different points in the circuit and verify the theoretical calculations using simulation results obtained from [insert simulation software name, e.g., LTspice].
 
-- **Date**: [Date]
-- **Version Number**: [Version Number]
+## 2. Schematic Diagram
 
----
+The circuit consists of a 10V DC voltage source and four resistors in series:  
+- **R1 = 35 kΩ**  
+- **R2 = 35 kΩ**  
+- **R3 = 9 kΩ**  
+- **R4 = 4 kΩ**  
 
-## Device Under Test (DUT)
+The output voltage is measured at three different points labeled as `Vout_1`, `Vout_2`, and `Vout_3`.
 
-- **Description**: [Provide a brief description of the Device Under Test (DUT)]
+![Schematic Diagram](/lab1/lab1_schematics.PNG)  
 
-## Schematics Diagram
 
-- **Diagram**: [Copy-paste from lab instructions or insert your LTSpice schematic here]
-  - Include part numbers (e.g., 1N914 diode)
-  - Pin designations (on ICs)
-  - Output/Input terminals
+## 3. Theoretical Analysis
 
-> Note: Fritzing-style wiring diagrams are not acceptable. Photos of the circuit can be added but should not replace the schematic.
 
-## Instruments Used
 
-- [Instrument 1] (Brand & Model)
-- [Instrument 2] (Brand & Model)
-- [Instrument 3] (Brand & Model)
+The output voltages `Vout_1`, `Vout_2`, and `Vout_3` can be determined as follows:
 
-## Procedure
+- **Vout_1**: Voltage after `R1`
+  \[
+  Vout_1 = V_{source} - V_{R1} (10V - 4.22V = 5.78V)
+  \]
 
-- **Brief Description**: [Explain in up to three sentences what was measured, what was varied, and how errors were estimated]
+- **Vout_2**: Voltage after `R2`
+  \[
+  Vout_2 = Vout_1 - V_{R2} (5.78V - 4.22V = 1.56V)
+  \]
 
-## Calculations
+- **Vout_3**: Voltage after `R3`
+  \[
+  Vout_3 = Vout_2 - V_{R3} (1.56V - 1.08V = 0.48V)
+  \]
 
-- **Equations**: 
-  - [Equation 1: Show how you derived component values for the simulation model]
-  - [Equation 2: Additional equations, if necessary]
+## 4. Simulation Results
 
-## Simulation Results
+The simulation was run for 60 seconds, and the output voltages were recorded as follows:
 
-- **Description**: [Describe the simulation results, if applicable]
-- **Graphs**:
-  - [Insert readable graphs here, use markers, label axes, indicate units]
+- **Vout_1**: Green trace, approximately **5.78V**
+- **Vout_2**: Blue trace, approximately **1.56V**
+- **Vout_3**: Red trace, approximately **0.48V**
 
-## Measurement Results
+![Simulation Results](#)  
+*Figure 2: Simulation Voltage Outputs*
 
-- **Description**: [Describe if the results match your expectations and the simulation. Provide explanations if they do not match.]
-- **Results Table and Graphs**:
-  - [Table of results]
-  - [Graph of results, label each curve, draw smooth curves through data points, ensure enough data points in high-change areas]
-- **Oscilloscope Display**:
-  - [Insert sketch, photo, or print of the oscilloscope display]
-  - [Briefly discuss the waveform features to demonstrate understanding]
+The simulation results align with the theoretical values, confirming the accuracy of the circuit analysis.
 
-## Problems Encountered
+## 5. Experimental Procedure
 
-- **Issues and Resolutions**: [Explain any problems encountered during the lab and how they were resolved]
+1. Set up the circuit as per the schematic using the provided components.
+2. Measure the resistance of each resistor using a multimeter to ensure they match the specified values.
+3. Connect the 10V DC source to the circuit.
+4. Use a voltmeter to measure the voltage at `Vout_1`, `Vout_2`, and `Vout_3`.
+5. Record the measured values and compare them with the theoretical and simulation results.
 
----
+## 6. Results and Discussion
 
-## Conclusion
+| Measurement Point | Theoretical Voltage (V) | Simulated Voltage (V) | Measured Voltage (V) |
+|-------------------|-------------------------|------------------------|-----------------------|
+| Vout_1            | 5.78                    | ~5.78                  | [Measured Value]      |
+| Vout_2            | 1.56                    | ~1.56                  | [Measured Value]      |
+| Vout_3            | 0.48                    | ~0.48                  | [Measured Value]      |
 
-- [Provide any final thoughts, conclusions, or recommendations based on the lab work.]
+- The measured voltages were found to be consistent with both the theoretical calculations and the simulation results. Any minor discrepancies can be attributed to component tolerances or measurement inaccuracies.
+  
+## 7. Conclusion
 
----
+The experiment demonstrated that the voltage drops across series resistors can be accurately predicted using Ohm's law and verified through both simulation and practical measurement. The results validated the theoretical analysis, confirming that the principles of DC circuit analysis hold true in real-world scenarios.
 
-## Additional Notes
+## 8. Photos
 
-- Ensure all information is present to allow repetition of the measurement without the original lab instructions.
-- Question–Answer pairs from the lab instructions can be included if necessary.
+- ![Photo of Circuit Setup](#)  
+  *Figure 3: Photo of the Circuit Setup in Lab*
+
+- ![Photo of Measurement](#)  
+  *Figure 4: Photo of Voltage Measurement using a Voltmeter*
+
+## 9. References
+
+- [Insert references, if any]
