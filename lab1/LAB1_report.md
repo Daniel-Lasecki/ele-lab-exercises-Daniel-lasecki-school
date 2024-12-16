@@ -6,7 +6,7 @@
 
 ## 1. Objective
 
-The purpose of this experiment is to analyze a simple DC circuit using a series of resistors and a DC voltage source. The objective is to measure the voltage at different points in the circuit and verify the theoretical calculations using simulation results obtained from [insert simulation software name, e.g., LTspice].
+The purpose of this experiment is to analyze a simple DC circuit using a series of resistors and a DC voltage source. The objective is to measure the voltage at different points in the circuit and verify the theoretical calculations using simulation results obtained from 
 
 ## 2. Schematic Diagram
 
@@ -18,7 +18,7 @@ The circuit consists of a 10V DC voltage source and four resistors in series:
 
 The output voltage is measured at three different points labeled as `Vout_1`, `Vout_2`, and `Vout_3`.
 
-![Schematic Diagram](/lab1/lab1_schematics.PNG)  
+  
 
 
 ## 3. Theoretical Analysis
@@ -50,7 +50,7 @@ The simulation was run for 60 seconds, and the output voltages were recorded as 
 - **Vout_2**: Blue trace, approximately **1.56V**
 - **Vout_3**: Red trace, approximately **0.48V**
 
-![Simulation Results](#)  
+![Schematic Diagram](lab1_schematics.PNG)
 *Figure 2: Simulation Voltage Outputs*
 
 The simulation results align with the theoretical values, confirming the accuracy of the circuit analysis.
@@ -60,16 +60,16 @@ The simulation results align with the theoretical values, confirming the accurac
 1. Set up the circuit as per the schematic using the provided components.
 2. Measure the resistance of each resistor using a multimeter to ensure they match the specified values.
 3. Connect the 10V DC source to the circuit.
-4. Use a voltmeter to measure the voltage at `Vout_1`, `Vout_2`, and `Vout_3`.
+4. Use a ocilloscope to measure the voltage at `Vout_1`, `Vout_2`, and `Vout_3`.
 5. Record the measured values and compare them with the theoretical and simulation results.
 
 ## 6. Results and Discussion
 
 | Measurement Point | Theoretical Voltage (V) | Simulated Voltage (V) | Measured Voltage (V) |
 |-------------------|-------------------------|------------------------|-----------------------|
-| Vout_1            | 5.78                    | ~5.78                  | [Measured Value]      |
-| Vout_2            | 1.56                    | ~1.56                  | [Measured Value]      |
-| Vout_3            | 0.48                    | ~0.48                  | [Measured Value]      |
+| Vout_1            | 5.78                    | ~5.78                  | ~5.80      |
+| Vout_2            | 1.56                    | ~1.56                  | ~1.80       |
+| Vout_3            | 0.48                    | ~0.48                  | ~1.10      |
 
 - The measured voltages were found to be consistent with both the theoretical calculations and the simulation results. Any minor discrepancies can be attributed to component tolerances or measurement inaccuracies.
   
@@ -79,12 +79,26 @@ The experiment demonstrated that the voltage drops across series resistors can b
 
 ## 8. Photos
 
-- ![Photo of Circuit Setup](#)  
-  *Figure 3: Photo of the Circuit Setup in Lab*
+ <img src="IMG_3762.jpg" alt="Photo of Circuit Setup" width="300">
 
-- ![Photo of Measurement](#)  
-  *Figure 4: Photo of Voltage Measurement using a Voltmeter*
+ <img src="IMG_3763.jpg" alt="Photo of Circuit Setup" width="300">
 
-## 9. References
+Figure 3: Photo of the Circuit Setup in Lab (voltage was 10v i made change after taking photo) and I accidentally mixed up the R3 and R4 resistors
 
-- [Insert references, if any]
+
+ 
+<img src="IMG_3906.jpg" alt="" width="300">
+
+<img src="IMG_3907.jpg" alt="" width="300">
+<img src="IMG_3908.jpg" alt="" width="300">
+
+Figure 4: Photo of resistor values. I accidentally mixed up the R3 and R4 resistors
+
+
+
+![Photo of Measurement](ELE_LAB_1_B_AND_C.PNG)  
+  Figure 5: Photo of Voltage Measurement using a pico 2000 series oscilloscope B = BLUE C = RED
+
+![Photo of Measurement](ELE_LAB_1_C(RED)_AND_D.PNG)  
+  Figure 6: Photo of Voltage Measurement using a pico 2000 series oscilloscope C = RED D = BLUE
+
