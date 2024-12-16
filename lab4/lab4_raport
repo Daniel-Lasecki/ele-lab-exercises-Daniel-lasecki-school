@@ -1,0 +1,82 @@
+## **Lab Report: Transistors as Switches**
+
+### **Author**: Przemysław Lasecki
+### **Project**: ELELAB4 Transistor as a Switch
+
+---
+
+## **1. Introduction**
+The purpose of this lab is to observe and analyze the behavior of transistors operating as electronic switches. Both NPN and PNP transistors are tested to demonstrate their role in controlling the current flow and voltage levels across different circuit components.
+
+---
+
+## **2. Objectives**
+- Analyze the switching behavior of NPN and PNP transistors.
+- Verify the current and voltage relationships using LTspice simulations.
+
+
+---
+
+## **3. Equipment and Software**
+1. **Components**:
+   - NPN Transistor (Q1) (2N3904 in physical circuit)
+   - PNP Transistor (Q2)
+   - Resistors 
+   - Diodes (LED)
+   - Voltage Sources (5V, 12V, -12V)
+2. **Software**:
+   - LTspice for circuit simulation
+   - picoscope 2204A
+
+---
+
+## **4. Simulated Circuits and Results**
+### **Task 1: NPN Transistor Switching with Voltage Control**
+- **Simulation Diagram**:
+  - The circuit uses an NPN transistor to switch the load.
+- **Results**:
+  ![Task 1 Simulation](Task1_npn_voltage.png)
+  - The voltage across the load and current flowing through the circuit are plotted.
+
+---
+
+### **Task 2: PNP Transistor Switching with Voltage Control**
+- **Simulation Diagram**:
+  - The circuit uses a PNP transistor to achieve switching behavior.
+- **Results**:
+  ![Task 2 Simulation](Task2_pnp_voltage.png)
+  - Voltages at different nodes demonstrate the switching capability of the PNP transistor.
+
+---
+
+### **Task 3: NPN Transistor Switching with LED Current Limiting**
+- **Simulation Diagram**:
+  - The NPN transistor switches an LED with a current-limiting resistor.
+- **Results**:
+  ![Task 3 Simulation](Task3_npn_15mA_led.png)
+  - The current flowing through the LED reaches approximately **15mA**, confirming the expected behavior.
+
+---
+
+### **Task 4: PNP Transistor Switching with LED Current Limiting**
+- **Simulation Diagram**:
+  - The PNP transistor switches an LED with a current-limiting resistor.
+- **Results**:
+  ![Task 4 Simulation](Task4_pnp_15mA_led.png)
+  - The current through the LED stabilizes around **15mA**.
+
+---
+
+## **5. Physical Circuit Results**
+Task 3 npn transistor:
+![Task 3 circuit](15mA_led_circuit_npn.png)
+- R_base = 68k ohm
+- R_led = 680 ohm
+- npn = 2N3904
+
+
+---
+
+## **6. Observations and Conclusions**
+1. **Switching Behavior**:
+   - NPN transistors operate when the base voltage exceeds a threshold
